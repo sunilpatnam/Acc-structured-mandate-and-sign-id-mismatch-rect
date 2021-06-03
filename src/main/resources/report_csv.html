@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<style>
+
+    .div1{
+      background-color:orange;
+      color:gray;
+    }
+
+ td{
+  text-align:center;
+  }
+
+
+
+</style>
+<head>
+
+    <title>Title</title>
+</head>
+<body>
+  Hi all,<br></br><br></br>
+PFA the report for 'A/c structured mandate and Sign ID mismatch Require Rectification' for &nbsp; <span th:text="${dto.getDateToDisplayInReport()}">pr</span><br></br><br></br><br></br>
+  Please find the below summary<br></br>
+  Total Cases  :<span th:text="${dto.getTotalCases()}">100</span><br></br>
+  Total Failure Cases  :<span th:text="${dto.getTotalFailedCases()}">20</span><br></br>
+Failure Percentage :<span th:text="${dto.getFailurePercentage()}">232</span>%<br></br>
+</body>
+</html>
